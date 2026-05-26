@@ -9,13 +9,17 @@ jobs:
   update-stats:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # Garante explicitamente a permissão de escrita via código
+      contents: write
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAT }}
 
       - name: Generate General Stats Card
         uses: stats-organization/github-readme-stats-action@v1
+        env:
+          FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true # Força a execução segura em Node 24
         with:
           card: stats
           options: "username=Suami-Yonashiro&show_icons=true&theme=tokyonight&locale=pt-br&include_all_commits=true&count_private=true"
@@ -24,6 +28,8 @@ jobs:
 
       - name: Generate Top Languages Card
         uses: stats-organization/github-readme-stats-action@v1
+        env:
+          FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true # Força a execução segura em Node 24
         with:
           card: top-langs
           options: "username=Suami-Yonashiro&layout=compact&theme=tokyonight&locale=pt-br&hide_langs_below=1"
@@ -33,7 +39,7 @@ jobs:
       - name: Commit and Push Changes
         run: |
           git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.email "github-actions[bot]@://github.com"
           git add stats.svg top-langs.svg
           git diff-index --quiet HEAD || git commit -m "chore: update readme stats SVGs"
           git push
