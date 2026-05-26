@@ -2,8 +2,8 @@ name: Update GitHub Readme Stats
 
 on:
   schedule:
-    - cron: '0 0 * * *' # Roda automaticamente todos os dias à meia-noite
-  workflow_dispatch: # Permite que você rode manualmente quando quiser
+    - cron: '0 0 * * *'
+  workflow_dispatch:
 
 jobs:
   update-stats:
@@ -19,28 +19,28 @@ jobs:
       - name: Generate General Stats Card
         uses: stats-organization/github-readme-stats-action@v1
         env:
-          FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true # Força a execução segura em Node 24
+          FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
         with:
           card: stats
           options: "username=Suami-Yonashiro&show_icons=true&theme=tokyonight&locale=pt-br&include_all_commits=true&count_private=true"
           token: ${{ secrets.PAT }}
           path: stats.svg
 
-      # O bloco abaixo foi desativado temporariamente colocando # no início das linhas:
-      # - name: Generate Top Languages Card
-      #   uses: stats-organization/github-readme-stats-action@v1
-      #   env:
-      #     FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true # Força a execução segura em Node 24
-      #   with:
-      #     card: top-langs
-      #     options: "username=Suami-Yonashiro&layout=compact&theme=tokyonight&locale=pt-br&hide_langs_below=1"
-      #     token: ${{ secrets.PAT }}
-      #     path: top-langs.svg
+# O bloco abaixo foi desativado temporariamente colocando # no início das linhas:
+#      - name: Generate Top Languages Card
+#        uses: stats-organization/github-readme-stats-action@v1
+#        env:
+#          FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+#        with:
+#          card: top-langs
+#          options: "username=Suami-Yonashiro&layout=compact&theme=tokyonight&locale=pt-br&hide_langs_below=1"
+#          token: ${{ secrets.PAT }}
+#          path: top-langs.svg
 
       - name: Commit and Push Changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@://github.com"
-          git add stats.svg top-langs.svg
+          git add stats.svg
           git diff-index --quiet HEAD || git commit -m "chore: update readme stats SVGs"
           git push
