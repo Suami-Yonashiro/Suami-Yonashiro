@@ -9,7 +9,7 @@ jobs:
   update-stats:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: write # Permissão obrigatória para a Action salvar o arquivo
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -26,10 +26,3 @@ jobs:
           token: ${{ secrets.PAT }}
           path: stats.svg
 
-      - name: Commit and Push Changes
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@://github.com"
-          git add stats.svg
-          git diff-index --quiet HEAD || git commit -m "chore: update readme stats SVGs"
-          git push
