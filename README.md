@@ -4,33 +4,12 @@
 
 De design de produtos à análise estratégica de negócios, hoje direciono meus conhecimentos para alcançar as habilidades de um Engenheiro de Dados. Entusiasmado por transformar dados brutos em inteligência estratégica e automação de processos em soluções reais de alto impacto.
 
-<p align="left">
-    <a href="https://www.linkedin.com/in/suami-yonashiro" target="_blank">
-        <img 
-            alt="LinkedIn" 
-            title="Conecte-se comigo no LinkedIn" 
-            src="https://custom-icon-badges.demolab.com/badge/LinkedIn-%E2%9E%94-%230A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=004182"
-        />
-    </a>
-    <a href="https://github.com/Suami-Yonashiro?tab=followers">
-        <img 
-            alt="Seguidores" 
-            title="Me siga no GitHub" 
-            src="https://custom-icon-badges.demolab.com/github/followers/Suami-Yonashiro?color=%2324292e&labelColor=1f2325&style=for-the-badge&logo=github&label=Seguidores&logoColor=white"
-        />
-    </a> 
-    <a href="https://github.com/Suami-Yonashiro?tab=repositories&sort=stargazers">
-        <img 
-            alt="Total de estrelas" 
-            title="Total de estrelas GitHub" 
-            src="https://img.shields.io/github/stars/Suami-Yonashiro?style=for-the-badge&color=55960c&labelColor=488207&logo=starship&logoColor=white&label=Estrelas"
-        />
-    </a>
-</p>
+<div align="left">
+  <img height="180" src="./stats.svg" />
+  <!-- <img height="180" src="./top-langs.svg" /> -->
+</div>
 
----
-
-### 🤖 Linguagens e Tecnologias
+<br/>
 
 <img 
     align="left" 
@@ -116,9 +95,33 @@ De design de produtos à análise estratégica de negócios, hoje direciono meus
 <br/>
 <br/>
 
-### 📊 Estatísticas
-
-<div align="left">
-  <img height="180" src="./stats.svg" />
-  <!-- <img height="180" src="./top-langs.svg" /> -->
-</div>
+<p align="left">
+    <a href="https://www.linkedin.com/in/suami-yonashiro" target="_blank">
+        <img 
+            alt="LinkedIn" 
+            title="Conecte-se comigo no LinkedIn" 
+            src="https://custom-icon-badges.demolab.com/badge/LinkedIn-%230A66C2?style=for-the-badge&logo=linkedin-white&labelColor=004182"
+        />
+    </a>
+    <a href="mailto:suami.yy@gmail.com">
+        <img 
+            alt="Gmail" 
+            title="Entre em contato por e-mail" 
+            src="https://custom-icon-badges.demolab.com/badge/_-Gmail-%23EA4335?style=for-the-badge&logo=gmail&labelColor=B31B1B"
+        />
+    </a>
+    <a href="https://github.com/Suami-Yonashiro?tab=followers">
+        <img 
+            alt="Seguidores" 
+            title="Me siga no GitHub" 
+            src="https://custom-icon-badges.demolab.com/github/followers/Suami-Yonashiro?color=%2324292e&labelColor=1f2325&style=for-the-badge&logo=github&label=Seguidores&logoColor=white"
+        />
+    </a> 
+    <a href="https://github.com/Suami-Yonashiro?tab=repositories&sort=stargazers">
+        <img 
+            alt="Total de estrelas" 
+            title="Total de estrelas GitHub" 
+            src="https://img.shields.io/github/stars/Suami-Yonashiro?style=for-the-badge&color=55960c&labelColor=488207&logo=starship&logoColor=white&label=Estrelas"
+        />
+    </a>
+</p>
