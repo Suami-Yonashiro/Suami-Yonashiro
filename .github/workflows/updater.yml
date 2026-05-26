@@ -3,18 +3,18 @@ name: Update GitHub Readme Stats
 on:
   schedule:
     - cron: '0 0 * * *' # Roda automaticamente todos os dias à meia-noite
-  workflow_dispatch: # Permite que você rode manualmente quando quiser
+  workflow_dispatch: # Permite rodar manualmente
 
 jobs:
   update-stats:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # Garante permissão total de escrita para o envio das imagens
+      contents: write
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.PAT }} # Garante o uso do seu Token Pessoal no Git
+          token: ${{ secrets.PAT }}
 
       - name: Generate General Stats Card
         uses: stats-organization/github-readme-stats-action@v1
@@ -41,6 +41,6 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@://github.com"
-          git add stats.svg 
+          git add stats.svg
           git diff-index --quiet HEAD || git commit -m "chore: update readme stats SVGs"
           git push
