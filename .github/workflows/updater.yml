@@ -2,14 +2,14 @@ name: Update GitHub Readme Stats
 
 on:
   schedule:
-    - cron: '0 0 * * *'
-  workflow_dispatch:
+    - cron: '0 0 * * *' # Roda automaticamente todos os dias à meia-noite
+  workflow_dispatch: # Permite rodar manualmente a qualquer momento
 
 jobs:
   update-stats:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: write # Garante a permissão de escrita no repositório
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -25,6 +25,7 @@ jobs:
           options: "username=Suami-Yonashiro&show_icons=true&theme=transparent&locale=pt-br&include_all_commits=true&count_private=true"
           token: ${{ secrets.PAT }}
           path: stats.svg
+          commit_message: "chore: update readme stats SVGs" # Faz o commit automático de forma nativa e segura
 
 # O bloco abaixo foi desativado temporariamente colocando # no início das linhas:
 #      - name: Generate Top Languages Card
@@ -36,11 +37,3 @@ jobs:
 #          options: "username=Suami-Yonashiro&layout=compact&theme=tokyonight&locale=pt-br&hide_langs_below=1"
 #          token: ${{ secrets.PAT }}
 #          path: top-langs.svg
-
-      - name: Commit and Push Changes
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add stats.svg
-          git diff-index --quiet HEAD || git commit -m "chore: update readme stats SVGs"
-          git push
