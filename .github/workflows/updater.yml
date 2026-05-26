@@ -9,17 +9,17 @@ jobs:
   update-stats:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: write # Garante permissão total de escrita para o envio das imagens
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.PAT }}
+          token: ${{ secrets.PAT }} # Garante o uso do seu Token Pessoal no Git
 
       - name: Generate General Stats Card
         uses: stats-organization/github-readme-stats-action@v1
         env:
-          FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true # Força a execução segura em Node 24
+          FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
         with:
           card: stats
           options: "username=Suami-Yonashiro&show_icons=true&theme=transparent&locale=pt-br&include_all_commits=true&count_private=true"
