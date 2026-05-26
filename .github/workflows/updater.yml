@@ -26,17 +26,6 @@ jobs:
           token: ${{ secrets.PAT }}
           path: stats.svg
 
-      # O bloco abaixo foi desativado temporariamente colocando # no início das linhas:
-      # - name: Generate Top Languages Card
-      #   uses: stats-organization/github-readme-stats-action@v1
-      #   env:
-      #     FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true # Força a execução segura em Node 24
-      #   with:
-      #     card: top-langs
-      #     options: "username=Suami-Yonashiro&layout=compact&theme=tokyonight&locale=pt-br&hide_langs_below=1"
-      #     token: ${{ secrets.PAT }}
-      #     path: top-langs.svg
-
       - name: Commit and Push Changes
         run: |
           git config --global user.name "github-actions[bot]"
