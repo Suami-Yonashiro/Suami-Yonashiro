@@ -120,5 +120,5 @@ De design de produtos à análise estratégica de negócios, hoje direciono meus
 
 <div align="left">
   <img height="180" src="./stats.svg" />
-  <img height="180" src="./top-langs.svg" />
+  <!-- <img height="180" src="./top-langs.svg" /> -->
 </div>
