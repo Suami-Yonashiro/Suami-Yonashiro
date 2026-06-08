@@ -5,7 +5,11 @@
 De design de produtos à análise estratégica de negócios, hoje direciono meus conhecimentos para alcançar as habilidades de um Engenheiro de Dados. Entusiasmado por transformar dados brutos em inteligência estratégica e automação de processos em soluções reais de alto impacto.
 
 <div align="left"> 
-  <img height="180" src="https://github-readme-stats-vercel-top.vercel.app/api?username=Suami-Yonashiro&show_icons=true&theme=tokyonight&hide_border=false&hide_title=true" alt="Estatísticas do GitHub" />
+  <!-- Badge de Commits Totais -->
+  <img height="28" src="https://img.shields.io/github/commits-per-user/Suami-Yonashiro?style=flat-square&logo=github&logoColor=white&label=Total%20Commits&color=21262d&labelColor=0d1117" alt="Total Commits" />
+  
+  <!-- Badge de Repositórios Públicos -->
+  <img height="28" src="https://img.shields.io/github/repos/Suami-Yonashiro?style=flat-square&logo=git&logoColor=white&label=Public%20Repos&color=21262d&labelColor=0d1117" alt="Public Repos" />
 </div>
 
 <br/>
