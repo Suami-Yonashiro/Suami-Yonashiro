@@ -5,8 +5,8 @@
 De design de produtos à análise estratégica de negócios, hoje direciono meus conhecimentos para alcançar as habilidades de um Engenheiro de Dados. Entusiasmado por transformar dados brutos em inteligência estratégica e automação de processos em soluções reais de alto impacto.
 
 <div align="left">
-  <img height="180" src="./stats.svg" />
-  <!-- <img height="180" src="./top-langs.svg" /> -->
+  <img height="180" src="https://github-readme-stats.vercel.app/api?username=Suami-Yonashiro&show_icons=true&theme=radial" />
+  <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Suami-Yonashiro&layout=compact&theme=radial" />
 </div>
 
 <br/>
