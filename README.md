@@ -5,7 +5,7 @@
 De design de produtos à análise estratégica de negócios, hoje direciono meus conhecimentos para alcançar as habilidades de um Engenheiro de Dados. Entusiasmado por transformar dados brutos em inteligência estratégica e automação de processos em soluções reais de alto impacto.
 
 <div align="left"> 
-  [![Troféus do GitHub](https://github-profile-trophy.vercel.app/?username=Suami-Yonashiro&theme=onedark&column=3&margin-w=15&margin-h=15)](https://github.com/ryo-ma/github-profile-trophy)
+  <img height="150" src="[https://github-readme-stats-vercel-top.vercel.app/api?username=Suami-Yonashiro&show_icons=true&theme=tokyonight&hide_border=false&hide_title=true](https://github-readme-stats-vercel-top.vercel.app/api?username=Suami-Yonashiro&show_icons=true&theme=tokyonight&hide_border=false&hide_title=true)" alt="Estatísticas GitHub" />
 </div>
 
 <br/>
