@@ -5,7 +5,8 @@
 De design de produtos à análise estratégica de negócios, hoje direciono meus conhecimentos para alcançar as habilidades de um Engenheiro de Dados. Entusiasmado por transformar dados brutos em inteligência estratégica e automação de processos em soluções reais de alto impacto.
 
 <div align="left"> 
-  <img src="https://metrics.lecoq.io/Suami-Yonashiro?template=classic&base=header%2C%20activity%2C%20community%2C%20repositories&base.indepth=false&config.timezone=America%2FSao_Paulo" alt="GitHub Stats" />
+  <img height="180" src="./stats.svg" />
+  <!-- <img height="180" src="./top-langs.svg" /> -->
 </div>
 
 <br/>
