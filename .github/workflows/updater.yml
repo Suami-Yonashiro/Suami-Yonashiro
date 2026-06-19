@@ -2,19 +2,19 @@ name: Update GitHub Readme Stats
 
 on:
   schedule:
-    - cron: '0 0 * * *' # Roda automaticamente todos os dias à meia-noite
-  workflow_dispatch: # Permite rodar manualmente a qualquer momento
+    - cron: '0 0 * * *'
+  workflow_dispatch:
 
 jobs:
   update-stats:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # Permissão de escrita no repositório
+      contents: write
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.PAT }}
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate General Stats Card
         uses: stats-organization/github-readme-stats-action@v1
@@ -23,7 +23,7 @@ jobs:
         with:
           card: stats
           options: "username=Suami-Yonashiro&show_icons=true&theme=transparent&locale=pt-br&include_all_commits=true&count_private=true"
-          token: ${{ secrets.PAT }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           path: stats.svg
 
       - name: Commit and push if changed
